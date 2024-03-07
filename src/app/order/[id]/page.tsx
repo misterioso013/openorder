@@ -73,9 +73,9 @@ export default function OrderPage({ params }: { params: { id: string } }) {
                   <CardDescription>Lista de produtos pedidos</CardDescription>
                 </CardHeader>
                 <div className="flex flex-row justify-between">
-                  <p className="text-lg">
+                  <div className="text-lg">
                     Produto 1 <Badge>5x</Badge>
-                  </p>
+                  </div>
                   <p className="text-lg">R$ 0,00</p>
                   <div className="flex gap-2">
                     <Button className="bg-green-600">+</Button>
@@ -83,9 +83,9 @@ export default function OrderPage({ params }: { params: { id: string } }) {
                   </div>
                 </div>
                 <div className="flex flex-row justify-between">
-                  <p className="text-lg">
+                  <div className="text-lg">
                     Produto 1 <Badge>5x</Badge>
-                  </p>
+                  </div>
                   <p className="text-lg">R$ 0,00</p>
                   <div className="flex gap-2">
                     <Button className="bg-green-600">+</Button>
@@ -93,9 +93,9 @@ export default function OrderPage({ params }: { params: { id: string } }) {
                   </div>
                 </div>
                 <div className="flex flex-row justify-between">
-                  <p className="text-lg">
+                  <div className="text-lg">
                     Produto 1 <Badge>5x</Badge>
-                  </p>
+                  </div>
                   <p className="text-lg">R$ 0,00</p>
                   <div className="flex gap-2">
                     <Button className="bg-green-600">+</Button>

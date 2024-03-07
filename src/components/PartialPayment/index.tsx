@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -46,6 +46,14 @@ export function PartialPayment() {
     // ✅ This will be type-safe and validated.
     console.log(values);
   }
+
+  useEffect(() => {
+    const f = form.formState.isValid;
+    if (f) setButtonDisabled(false);
+    else {
+      setButtonDisabled(true);
+    }
+  }, [form.formState.isValid]);
 
   return (
     <Dialog>
